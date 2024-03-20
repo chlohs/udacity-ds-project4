@@ -4,4 +4,5 @@ matplotlib
 scikit-learn
 requests
 streamlit
+seaborn
 pickle5; python_version < "3.8"

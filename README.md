@@ -24,12 +24,28 @@ import requests
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.model_selection import cross_val_score, GridSearchCV, RandomizedSearchCV
+import seaborn as sns
+import pickle
+from typing import List, Union, Optional, Any
+from scipy.stats import randint
+from sklearn.model_selection import (
+                                        cross_val_score,
+                                        GridSearchCV,
+                                        RandomizedSearchCV
+                                    )
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import FunctionTransformer
-from sklearn.metrics import make_scorer, accuracy_score, classification_report, confusion_matrix
+from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
-import pickle
+from sklearn.metrics import (
+                                make_scorer,
+                                accuracy_score,
+                                precision_score,
+                                recall_score,
+                                f1_score,
+                                classification_report,
+                                confusion_matrix
+                            )
 ```
 
 ### Define Functions
